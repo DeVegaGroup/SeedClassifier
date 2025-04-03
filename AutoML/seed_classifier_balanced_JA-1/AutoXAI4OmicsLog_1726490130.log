@@ -1,0 +1,1157 @@
+OmicLogger - 2024-09-16 12:35:30,818 - utils.py - setup_logger() - INFO : OmicLogger initialised
+OmicLogger - 2024-09-16 12:35:30,818 - mode_train_models.py - main() - INFO : Loading data...
+OmicLogger - 2024-09-16 12:35:30,818 - load.py - load_data() - DEBUG : Data load inititalised
+OmicLogger - 2024-09-16 12:35:30,818 - load.py - load_data_main() - DEBUG : Loading training data...
+OmicLogger - 2024-09-16 12:35:30,818 - load.py - get_non_omic_data() - DEBUG : Inserting data into DataFrames...
+OmicLogger - 2024-09-16 12:35:33,169 - load.py - load_data() - DEBUG : Load completed
+OmicLogger - 2024-09-16 12:35:33,169 - mode_train_models.py - main() - INFO : Data Loaded. Splitting data...
+OmicLogger - 2024-09-16 12:35:33,169 - data_split.py - split_data() - DEBUG : Splitting data...
+OmicLogger - 2024-09-16 12:35:33,169 - data_split.py - std_split() - DEBUG : Split according to standard methods...
+OmicLogger - 2024-09-16 12:35:33,282 - mode_train_models.py - main() - INFO : Data splitted. Standardising...
+OmicLogger - 2024-09-16 12:35:33,282 - standardisation.py - standardize_data() - DEBUG : Applying Standard scaling to given data...
+OmicLogger - 2024-09-16 12:35:35,417 - utils.py - transform_data() - DEBUG : Transforming given data according to given transformer...
+OmicLogger - 2024-09-16 12:35:38,677 - mode_train_models.py - main() - INFO : Data standardised, transformer saved. Selecting features...
+OmicLogger - 2024-09-16 12:35:38,677 - feature_selection.py - feat_selection() - DEBUG : Initalising feature selection process...
+OmicLogger - 2024-09-16 12:35:38,677 - feature_selection.py - variance_removal() - DEBUG : Applying varience threshold, using 0 as the threshold...
+OmicLogger - 2024-09-16 12:35:38,721 - feature_selection.py - manual_feat_selection() - DEBUG : Selecting 64 features...
+OmicLogger - 2024-09-16 12:35:38,721 - feature_selection.py - manual_feat_selection() - DEBUG : Using SelectKBest with f_classif...
+OmicLogger - 2024-09-16 12:35:39,225 - mode_train_models.py - main() - INFO : Features selected, transformer saved. Re-combining data...
+OmicLogger - 2024-09-16 12:35:39,226 - class_balancing.py - oversample_data() - DEBUG : Oversampling data...
+OmicLogger - 2024-09-16 12:37:13,562 - mode_train_models.py - main() - INFO : Data combined and saved to files. Defining models...
+OmicLogger - 2024-09-16 12:37:13,696 - mode_train_models.py - main() - INFO : Models defined. Creating results df holder...
+OmicLogger - 2024-09-16 12:37:13,696 - mode_train_models.py - main() - INFO : Holders created. Begin running models...
+OmicLogger - 2024-09-16 12:37:13,697 - models.py - run_models() - DEBUG : Initialised training & tuning of models...
+OmicLogger - 2024-09-16 12:37:13,697 - metrics.py - define_scorers() - DEBUG : Collecting model scorers specified in config...
+OmicLogger - 2024-09-16 12:37:13,697 - models.py - run_models() - DEBUG : Training model: RandomForestClassifier
+OmicLogger - 2024-09-16 12:37:13,697 - models.py - random_search() - DEBUG : Training with a random search...
+OmicLogger - 2024-09-16 15:08:19,282 - save.py - save_model() - DEBUG : Saving model...
+OmicLogger - 2024-09-16 15:08:20,451 - metrics.py - evaluate_model() - DEBUG : Evaluate the model...
+OmicLogger - 2024-09-16 15:08:27,937 - metrics.py - evaluate_model() - DEBUG : calculating prediction probabilities...
+OmicLogger - 2024-09-16 15:08:35,461 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score for Train and Test sets...
+OmicLogger - 2024-09-16 15:08:37,075 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score perClass for Train and Test sets...
+OmicLogger - 2024-09-16 15:08:38,788 - metrics.py - evaluate_model() - DEBUG : Calculating confusion matrix...
+OmicLogger - 2024-09-16 15:08:41,079 - save.py - save_results() - DEBUG : Save results to file...
+OmicLogger - 2024-09-16 15:08:41,089 - models.py - run_models() - DEBUG : Training model: AdaBoostClassifier
+OmicLogger - 2024-09-16 15:08:41,089 - models.py - random_search() - DEBUG : Training with a random search...
+OmicLogger - 2024-09-16 17:08:19,814 - save.py - save_model() - DEBUG : Saving model...
+OmicLogger - 2024-09-16 17:08:20,370 - metrics.py - evaluate_model() - DEBUG : Evaluate the model...
+OmicLogger - 2024-09-16 17:08:21,161 - metrics.py - evaluate_model() - DEBUG : calculating prediction probabilities...
+OmicLogger - 2024-09-16 17:08:21,931 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score for Train and Test sets...
+OmicLogger - 2024-09-16 17:08:23,494 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score perClass for Train and Test sets...
+OmicLogger - 2024-09-16 17:08:25,070 - metrics.py - evaluate_model() - DEBUG : Calculating confusion matrix...
+OmicLogger - 2024-09-16 17:08:29,989 - save.py - save_results() - DEBUG : Save results to file...
+OmicLogger - 2024-09-16 17:08:30,004 - models.py - run_models() - DEBUG : Training model: KNeighborsClassifier
+OmicLogger - 2024-09-16 17:08:30,004 - models.py - random_search() - DEBUG : Training with a random search...
+OmicLogger - 2024-09-16 23:49:50,350 - save.py - save_model() - DEBUG : Saving model...
+OmicLogger - 2024-09-16 23:49:50,839 - metrics.py - evaluate_model() - DEBUG : Evaluate the model...
+OmicLogger - 2024-09-17 00:47:56,845 - metrics.py - evaluate_model() - DEBUG : calculating prediction probabilities...
+OmicLogger - 2024-09-17 01:45:52,749 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score for Train and Test sets...
+OmicLogger - 2024-09-17 01:45:54,775 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score perClass for Train and Test sets...
+OmicLogger - 2024-09-17 01:45:56,428 - metrics.py - evaluate_model() - DEBUG : Calculating confusion matrix...
+OmicLogger - 2024-09-17 01:45:58,546 - save.py - save_results() - DEBUG : Save results to file...
+OmicLogger - 2024-09-17 01:45:58,563 - models.py - run_models() - DEBUG : Training model: AutoXGBoost
+OmicLogger - 2024-09-17 01:45:58,563 - models.py - single_model() - DEBUG : Training as single model...
+OmicLogger - 2024-09-17 01:45:58,564 - models.py - single_model() - DEBUG : Setting parameters: {'data_test': array([[ 0.6288888 ,  0.57197969,  1.18272323, ..., -0.85390762,
+         0.10611007, -0.21145512],
+       [ 1.00198821,  0.77415306,  1.18272323, ...,  1.04997246,
+        -0.68934682, -0.18328582],
+       [-0.36347999, -0.11766839, -5.19933758, ...,  0.70558046,
+         0.87195192,  0.36831007],
+       ...,
+       [-1.53177081, -2.13074312, -5.19933758, ...,  0.51197428,
+        -0.28229367, -0.35554668],
+       [ 0.11550359,  0.14651675, -5.19933758, ..., -1.15330142,
+         1.32475519, -0.21069785],
+       [ 0.51465572,  0.62261249,  1.18272323, ..., -0.46770192,
+         0.5551239 ,  0.00843035]]), 'labels_test': array(['L_vulgare', 'D_carota', 'G_verum', ..., 'P_rhoeas', 'L_vulgare',
+       'L_vulgare'], dtype=object), 'scorer_func': make_scorer(f1_score, average=weighted), 'random_state': 1}
+OmicLogger - 2024-09-17 01:45:58,615 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-17 01:56:58,234 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-17 01:56:58,235 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-17 01:56:58,235 - save.py - save_model() - DEBUG : Saving model...
+OmicLogger - 2024-09-17 01:56:58,235 - custom_model.py - save_model() - DEBUG : custom save_model: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best
+OmicLogger - 2024-09-17 01:56:58,954 - metrics.py - evaluate_model() - DEBUG : Evaluate the model...
+OmicLogger - 2024-09-17 01:56:59,495 - metrics.py - evaluate_model() - DEBUG : calculating prediction probabilities...
+OmicLogger - 2024-09-17 01:57:00,049 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score for Train and Test sets...
+OmicLogger - 2024-09-17 01:57:02,037 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score perClass for Train and Test sets...
+OmicLogger - 2024-09-17 01:57:04,030 - metrics.py - evaluate_model() - DEBUG : Calculating confusion matrix...
+OmicLogger - 2024-09-17 01:57:09,403 - save.py - save_results() - DEBUG : Save results to file...
+OmicLogger - 2024-09-17 01:57:09,418 - models.py - run_models() - DEBUG : Training model: AutoLGBM
+OmicLogger - 2024-09-17 01:57:09,418 - models.py - single_model() - DEBUG : Training as single model...
+OmicLogger - 2024-09-17 01:57:09,418 - models.py - single_model() - DEBUG : Setting parameters: {'data_test': array([[ 0.6288888 ,  0.57197969,  1.18272323, ..., -0.85390762,
+         0.10611007, -0.21145512],
+       [ 1.00198821,  0.77415306,  1.18272323, ...,  1.04997246,
+        -0.68934682, -0.18328582],
+       [-0.36347999, -0.11766839, -5.19933758, ...,  0.70558046,
+         0.87195192,  0.36831007],
+       ...,
+       [-1.53177081, -2.13074312, -5.19933758, ...,  0.51197428,
+        -0.28229367, -0.35554668],
+       [ 0.11550359,  0.14651675, -5.19933758, ..., -1.15330142,
+         1.32475519, -0.21069785],
+       [ 0.51465572,  0.62261249,  1.18272323, ..., -0.46770192,
+         0.5551239 ,  0.00843035]]), 'labels_test': array(['L_vulgare', 'D_carota', 'G_verum', ..., 'P_rhoeas', 'L_vulgare',
+       'L_vulgare'], dtype=object), 'scorer_func': make_scorer(f1_score, average=weighted), 'random_state': 1}
+OmicLogger - 2024-09-17 01:57:09,479 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-17 02:07:50,404 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-17 02:07:50,406 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-17 02:07:50,407 - save.py - save_model() - DEBUG : Saving model...
+OmicLogger - 2024-09-17 02:07:50,407 - custom_model.py - save_model() - DEBUG : custom save_model: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best
+OmicLogger - 2024-09-17 02:07:50,966 - metrics.py - evaluate_model() - DEBUG : Evaluate the model...
+OmicLogger - 2024-09-17 02:07:54,162 - metrics.py - evaluate_model() - DEBUG : calculating prediction probabilities...
+OmicLogger - 2024-09-17 02:07:57,366 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score for Train and Test sets...
+OmicLogger - 2024-09-17 02:07:59,335 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score perClass for Train and Test sets...
+OmicLogger - 2024-09-17 02:08:01,322 - metrics.py - evaluate_model() - DEBUG : Calculating confusion matrix...
+OmicLogger - 2024-09-17 02:08:03,799 - save.py - save_results() - DEBUG : Save results to file...
+OmicLogger - 2024-09-17 02:08:03,814 - models.py - run_models() - DEBUG : Training model: AutoSKLearn
+OmicLogger - 2024-09-17 02:08:03,814 - models.py - single_model() - DEBUG : Training as single model...
+OmicLogger - 2024-09-17 02:08:03,815 - models.py - single_model() - DEBUG : Setting parameters: {'data_test': array([[ 0.6288888 ,  0.57197969,  1.18272323, ..., -0.85390762,
+         0.10611007, -0.21145512],
+       [ 1.00198821,  0.77415306,  1.18272323, ...,  1.04997246,
+        -0.68934682, -0.18328582],
+       [-0.36347999, -0.11766839, -5.19933758, ...,  0.70558046,
+         0.87195192,  0.36831007],
+       ...,
+       [-1.53177081, -2.13074312, -5.19933758, ...,  0.51197428,
+        -0.28229367, -0.35554668],
+       [ 0.11550359,  0.14651675, -5.19933758, ..., -1.15330142,
+         1.32475519, -0.21069785],
+       [ 0.51465572,  0.62261249,  1.18272323, ..., -0.46770192,
+         0.5551239 ,  0.00843035]]), 'labels_test': array(['L_vulgare', 'D_carota', 'G_verum', ..., 'P_rhoeas', 'L_vulgare',
+       'L_vulgare'], dtype=object), 'scorer_func': make_scorer(f1_score, average=weighted), 'random_state': 1}
+OmicLogger - 2024-09-17 02:08:03,874 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-17 02:09:58,756 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-17 02:09:58,759 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-17 02:09:58,761 - save.py - save_model() - DEBUG : Saving model...
+OmicLogger - 2024-09-17 02:09:58,762 - custom_model.py - save_model() - DEBUG : custom save_model: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best
+OmicLogger - 2024-09-17 02:09:59,260 - metrics.py - evaluate_model() - DEBUG : Evaluate the model...
+OmicLogger - 2024-09-17 02:09:59,342 - metrics.py - evaluate_model() - DEBUG : calculating prediction probabilities...
+OmicLogger - 2024-09-17 02:09:59,441 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score for Train and Test sets...
+OmicLogger - 2024-09-17 02:10:01,260 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score perClass for Train and Test sets...
+OmicLogger - 2024-09-17 02:10:03,052 - metrics.py - evaluate_model() - DEBUG : Calculating confusion matrix...
+OmicLogger - 2024-09-17 02:10:05,982 - save.py - save_results() - DEBUG : Save results to file...
+OmicLogger - 2024-09-17 02:10:06,000 - models.py - run_models() - DEBUG : Training model: AutoKeras
+OmicLogger - 2024-09-17 02:10:06,000 - models.py - single_model() - DEBUG : Training as single model...
+OmicLogger - 2024-09-17 02:10:06,001 - models.py - single_model() - DEBUG : Setting parameters: {'data_test': array([[ 0.6288888 ,  0.57197969,  1.18272323, ..., -0.85390762,
+         0.10611007, -0.21145512],
+       [ 1.00198821,  0.77415306,  1.18272323, ...,  1.04997246,
+        -0.68934682, -0.18328582],
+       [-0.36347999, -0.11766839, -5.19933758, ...,  0.70558046,
+         0.87195192,  0.36831007],
+       ...,
+       [-1.53177081, -2.13074312, -5.19933758, ...,  0.51197428,
+        -0.28229367, -0.35554668],
+       [ 0.11550359,  0.14651675, -5.19933758, ..., -1.15330142,
+         1.32475519, -0.21069785],
+       [ 0.51465572,  0.62261249,  1.18272323, ..., -0.46770192,
+         0.5551239 ,  0.00843035]]), 'labels_test': array(['L_vulgare', 'D_carota', 'G_verum', ..., 'P_rhoeas', 'L_vulgare',
+       'L_vulgare'], dtype=object), 'scorer_func': make_scorer(f1_score, average=weighted), 'random_state': 1}
+OmicLogger - 2024-09-17 02:10:06,060 - custom_model.py - _define_model() - DEBUG : autokeras_config = {'n_epochs': 100, 'batch_size': 32, 'verbose': True, 'n_blocks': 3, 'dropout': 0.3, 'use_batchnorm': True, 'n_trials': 4, 'tuner': 'bayesian'}
+OmicLogger - 2024-09-17 03:09:31,795 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-17 03:09:31,800 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-17 03:09:31,801 - save.py - save_model() - DEBUG : Saving model...
+OmicLogger - 2024-09-17 03:09:31,801 - custom_model.py - save_model() - DEBUG : custom save_model: experiments/results/seed_classifier_balanced_JA-1/models/AutoKeras_best
+OmicLogger - 2024-09-17 03:09:32,382 - metrics.py - evaluate_model() - DEBUG : Evaluate the model...
+OmicLogger - 2024-09-17 03:09:48,463 - metrics.py - evaluate_model() - DEBUG : calculating prediction probabilities...
+OmicLogger - 2024-09-17 03:10:03,313 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score for Train and Test sets...
+OmicLogger - 2024-09-17 03:10:04,863 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score perClass for Train and Test sets...
+OmicLogger - 2024-09-17 03:10:06,399 - metrics.py - evaluate_model() - DEBUG : Calculating confusion matrix...
+OmicLogger - 2024-09-17 03:10:11,316 - save.py - save_results() - DEBUG : Save results to file...
+OmicLogger - 2024-09-17 03:10:11,331 - models.py - run_models() - DEBUG : Training model: GradientBoostingClassifier
+OmicLogger - 2024-09-17 03:10:11,331 - models.py - single_model() - DEBUG : Training as single model...
+OmicLogger - 2024-09-17 03:10:11,331 - models.py - single_model() - DEBUG : Setting parameters: {'random_state': 1}
+OmicLogger - 2024-09-17 04:36:38,687 - save.py - save_model() - DEBUG : Saving model...
+OmicLogger - 2024-09-17 04:36:38,775 - metrics.py - evaluate_model() - DEBUG : Evaluate the model...
+OmicLogger - 2024-09-17 04:36:44,878 - metrics.py - evaluate_model() - DEBUG : calculating prediction probabilities...
+OmicLogger - 2024-09-17 04:36:50,902 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score for Train and Test sets...
+OmicLogger - 2024-09-17 04:36:52,511 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score perClass for Train and Test sets...
+OmicLogger - 2024-09-17 04:36:54,235 - metrics.py - evaluate_model() - DEBUG : Calculating confusion matrix...
+OmicLogger - 2024-09-17 04:36:59,447 - save.py - save_results() - DEBUG : Save results to file...
+OmicLogger - 2024-09-17 04:36:59,471 - models.py - run_models() - DEBUG : Training model: MLPClassifier
+OmicLogger - 2024-09-17 04:36:59,471 - models.py - single_model() - DEBUG : Training as single model...
+OmicLogger - 2024-09-17 04:36:59,472 - models.py - single_model() - DEBUG : Setting parameters: {'random_state': 1}
+OmicLogger - 2024-09-17 04:43:26,633 - save.py - save_model() - DEBUG : Saving model...
+OmicLogger - 2024-09-17 04:43:26,662 - metrics.py - evaluate_model() - DEBUG : Evaluate the model...
+OmicLogger - 2024-09-17 04:43:27,114 - metrics.py - evaluate_model() - DEBUG : calculating prediction probabilities...
+OmicLogger - 2024-09-17 04:43:27,454 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score for Train and Test sets...
+OmicLogger - 2024-09-17 04:43:28,770 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score perClass for Train and Test sets...
+OmicLogger - 2024-09-17 04:43:30,045 - metrics.py - evaluate_model() - DEBUG : Calculating confusion matrix...
+OmicLogger - 2024-09-17 04:43:35,077 - save.py - save_results() - DEBUG : Save results to file...
+OmicLogger - 2024-09-17 04:43:35,097 - models.py - run_models() - DEBUG : Training model: XGBClassifier
+OmicLogger - 2024-09-17 04:43:35,097 - models.py - random_search() - DEBUG : Training with a random search...
+OmicLogger - 2024-09-19 15:27:13,986 - save.py - save_model() - DEBUG : Saving model...
+OmicLogger - 2024-09-19 15:27:14,480 - metrics.py - evaluate_model() - DEBUG : Evaluate the model...
+OmicLogger - 2024-09-19 15:27:18,012 - metrics.py - evaluate_model() - DEBUG : calculating prediction probabilities...
+OmicLogger - 2024-09-19 15:27:21,290 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score for Train and Test sets...
+OmicLogger - 2024-09-19 15:27:23,119 - metrics.py - evaluate_model() - DEBUG : Calculating f1_score perClass for Train and Test sets...
+OmicLogger - 2024-09-19 15:27:24,960 - metrics.py - evaluate_model() - DEBUG : Calculating confusion matrix...
+OmicLogger - 2024-09-19 15:27:45,873 - save.py - save_results() - DEBUG : Save results to file...
+OmicLogger - 2024-09-19 15:27:47,012 - mode_train_models.py - main() - INFO : Models trained. Beggining plotting process...
+OmicLogger - 2024-09-19 15:27:47,012 - mode_train_models.py - main() - INFO : Plots defined. Begin plotting graphs...
+OmicLogger - 2024-09-19 15:27:47,012 - mode_plotting.py - plot_graphs() - DEBUG : Defining scorers...
+OmicLogger - 2024-09-19 15:27:47,013 - metrics.py - define_scorers() - DEBUG : Collecting model scorers specified in config...
+OmicLogger - 2024-09-19 15:27:47,013 - mode_plotting.py - plot_graphs() - DEBUG : Defining graphs...
+OmicLogger - 2024-09-19 15:27:47,013 - plot_utils.py - define_plots() - DEBUG : Define dict of plots...
+OmicLogger - 2024-09-19 15:27:47,013 - mode_plotting.py - plot_graphs() - DEBUG : Begin plotting graphs...
+OmicLogger - 2024-09-19 15:27:47,013 - plots_both.py - barplot_scorer() - DEBUG : Creating barplot_scorer...
+OmicLogger - 2024-09-19 15:36:03,319 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-19 15:36:11,729 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-19 15:36:19,655 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-19 15:36:30,565 - custom_model.py - load_model() - DEBUG : loading: {model_path}.h5
+OmicLogger - 2024-09-19 15:36:41,680 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,680 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,680 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,680 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,681 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,681 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,681 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,681 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,681 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,681 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,728 - utils.py - pretty_names() - DEBUG : Fetching pretty names...
+OmicLogger - 2024-09-19 15:36:41,728 - save.py - save_fig() - DEBUG : Saving figure (experiments/results/seed_classifier_balanced_JA-1/graphs/barplot_f1_score)to file...
+OmicLogger - 2024-09-19 15:36:47,452 - plots_both.py - boxplot_scorer_cv() - DEBUG : Creating boxplot_scorer_cv...
+OmicLogger - 2024-09-19 15:36:47,471 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 0
+OmicLogger - 2024-09-19 15:49:40,275 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 1
+OmicLogger - 2024-09-19 16:02:40,415 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 2
+OmicLogger - 2024-09-19 16:15:57,726 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 3
+OmicLogger - 2024-09-19 16:29:10,285 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 4
+OmicLogger - 2024-09-19 16:42:06,120 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 5
+OmicLogger - 2024-09-19 16:55:08,812 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 6
+OmicLogger - 2024-09-19 17:07:41,158 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 7
+OmicLogger - 2024-09-19 17:18:53,904 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 8
+OmicLogger - 2024-09-19 17:29:53,204 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 9
+OmicLogger - 2024-09-19 17:42:35,265 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 10
+OmicLogger - 2024-09-19 17:55:50,418 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 11
+OmicLogger - 2024-09-19 18:08:52,873 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 12
+OmicLogger - 2024-09-19 18:21:59,623 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 13
+OmicLogger - 2024-09-19 18:35:01,706 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 14
+OmicLogger - 2024-09-19 18:48:01,179 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 15
+OmicLogger - 2024-09-19 19:01:09,970 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 16
+OmicLogger - 2024-09-19 19:14:22,472 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 17
+OmicLogger - 2024-09-19 19:26:57,827 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 18
+OmicLogger - 2024-09-19 19:40:10,389 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 19
+OmicLogger - 2024-09-19 19:53:16,010 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 20
+OmicLogger - 2024-09-19 20:06:34,636 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 21
+OmicLogger - 2024-09-19 20:19:50,235 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 22
+OmicLogger - 2024-09-19 20:33:13,878 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 23
+OmicLogger - 2024-09-19 20:46:45,369 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 24
+OmicLogger - 2024-09-19 20:59:22,352 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 25
+OmicLogger - 2024-09-19 21:12:07,356 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 26
+OmicLogger - 2024-09-19 21:23:53,602 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 27
+OmicLogger - 2024-09-19 21:35:12,543 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 28
+OmicLogger - 2024-09-19 21:46:18,831 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 29
+OmicLogger - 2024-09-19 21:57:18,147 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 30
+OmicLogger - 2024-09-19 22:08:09,992 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 31
+OmicLogger - 2024-09-19 22:19:03,394 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 32
+OmicLogger - 2024-09-19 22:29:59,212 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 33
+OmicLogger - 2024-09-19 22:40:52,015 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 34
+OmicLogger - 2024-09-19 22:51:51,201 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 35
+OmicLogger - 2024-09-19 23:02:44,023 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 36
+OmicLogger - 2024-09-19 23:13:44,572 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 37
+OmicLogger - 2024-09-19 23:24:41,339 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 38
+OmicLogger - 2024-09-19 23:35:35,076 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 39
+OmicLogger - 2024-09-19 23:46:32,921 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 40
+OmicLogger - 2024-09-19 23:57:26,294 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 41
+OmicLogger - 2024-09-20 00:08:18,928 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 42
+OmicLogger - 2024-09-20 00:19:13,472 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 43
+OmicLogger - 2024-09-20 00:30:06,677 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 44
+OmicLogger - 2024-09-20 00:41:03,631 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 45
+OmicLogger - 2024-09-20 00:52:06,320 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 46
+OmicLogger - 2024-09-20 01:05:08,437 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 47
+OmicLogger - 2024-09-20 01:18:12,034 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 48
+OmicLogger - 2024-09-20 01:31:17,983 - plots_both.py - boxplot_scorer_cv() - DEBUG : RandomForestClassifier, fold 49
+OmicLogger - 2024-09-20 01:44:23,548 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 0
+OmicLogger - 2024-09-20 01:44:57,011 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 1
+OmicLogger - 2024-09-20 01:45:29,976 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 2
+OmicLogger - 2024-09-20 01:46:03,149 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 3
+OmicLogger - 2024-09-20 01:46:36,471 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 4
+OmicLogger - 2024-09-20 01:47:09,650 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 5
+OmicLogger - 2024-09-20 01:47:42,915 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 6
+OmicLogger - 2024-09-20 01:48:16,143 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 7
+OmicLogger - 2024-09-20 01:48:49,330 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 8
+OmicLogger - 2024-09-20 01:49:22,668 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 9
+OmicLogger - 2024-09-20 01:49:55,962 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 10
+OmicLogger - 2024-09-20 01:50:29,157 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 11
+OmicLogger - 2024-09-20 01:51:02,436 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 12
+OmicLogger - 2024-09-20 01:51:35,643 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 13
+OmicLogger - 2024-09-20 01:52:08,965 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 14
+OmicLogger - 2024-09-20 01:52:42,167 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 15
+OmicLogger - 2024-09-20 01:53:15,524 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 16
+OmicLogger - 2024-09-20 01:53:48,760 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 17
+OmicLogger - 2024-09-20 01:54:22,078 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 18
+OmicLogger - 2024-09-20 01:54:55,289 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 19
+OmicLogger - 2024-09-20 01:55:28,572 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 20
+OmicLogger - 2024-09-20 01:56:01,704 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 21
+OmicLogger - 2024-09-20 01:56:35,039 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 22
+OmicLogger - 2024-09-20 01:57:08,171 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 23
+OmicLogger - 2024-09-20 01:57:41,107 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 24
+OmicLogger - 2024-09-20 01:58:14,331 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 25
+OmicLogger - 2024-09-20 01:58:47,545 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 26
+OmicLogger - 2024-09-20 01:59:19,523 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 27
+OmicLogger - 2024-09-20 01:59:47,203 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 28
+OmicLogger - 2024-09-20 02:00:14,897 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 29
+OmicLogger - 2024-09-20 02:00:42,674 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 30
+OmicLogger - 2024-09-20 02:01:10,304 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 31
+OmicLogger - 2024-09-20 02:01:37,995 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 32
+OmicLogger - 2024-09-20 02:02:05,607 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 33
+OmicLogger - 2024-09-20 02:02:33,309 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 34
+OmicLogger - 2024-09-20 02:03:00,900 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 35
+OmicLogger - 2024-09-20 02:03:28,555 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 36
+OmicLogger - 2024-09-20 02:03:56,240 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 37
+OmicLogger - 2024-09-20 02:04:23,892 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 38
+OmicLogger - 2024-09-20 02:04:51,556 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 39
+OmicLogger - 2024-09-20 02:05:19,256 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 40
+OmicLogger - 2024-09-20 02:05:46,887 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 41
+OmicLogger - 2024-09-20 02:06:14,518 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 42
+OmicLogger - 2024-09-20 02:06:42,258 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 43
+OmicLogger - 2024-09-20 02:07:11,260 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 44
+OmicLogger - 2024-09-20 02:07:43,897 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 45
+OmicLogger - 2024-09-20 02:08:16,513 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 46
+OmicLogger - 2024-09-20 02:08:49,087 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 47
+OmicLogger - 2024-09-20 02:09:21,816 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 48
+OmicLogger - 2024-09-20 02:09:54,453 - plots_both.py - boxplot_scorer_cv() - DEBUG : AdaBoostClassifier, fold 49
+OmicLogger - 2024-09-20 02:10:25,198 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 0
+OmicLogger - 2024-09-20 02:10:25,991 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 1
+OmicLogger - 2024-09-20 02:10:26,751 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 2
+OmicLogger - 2024-09-20 02:10:27,507 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 3
+OmicLogger - 2024-09-20 02:10:28,264 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 4
+OmicLogger - 2024-09-20 02:10:29,044 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 5
+OmicLogger - 2024-09-20 02:10:29,760 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 6
+OmicLogger - 2024-09-20 02:10:30,461 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 7
+OmicLogger - 2024-09-20 02:10:31,183 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 8
+OmicLogger - 2024-09-20 02:10:31,892 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 9
+OmicLogger - 2024-09-20 02:10:32,626 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 10
+OmicLogger - 2024-09-20 02:10:33,348 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 11
+OmicLogger - 2024-09-20 02:10:34,087 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 12
+OmicLogger - 2024-09-20 02:10:34,801 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 13
+OmicLogger - 2024-09-20 02:10:35,510 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 14
+OmicLogger - 2024-09-20 02:10:36,250 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 15
+OmicLogger - 2024-09-20 02:10:37,070 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 16
+OmicLogger - 2024-09-20 02:10:37,871 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 17
+OmicLogger - 2024-09-20 02:10:38,686 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 18
+OmicLogger - 2024-09-20 02:10:39,432 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 19
+OmicLogger - 2024-09-20 02:10:40,160 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 20
+OmicLogger - 2024-09-20 02:10:40,909 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 21
+OmicLogger - 2024-09-20 02:10:41,627 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 22
+OmicLogger - 2024-09-20 02:10:42,348 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 23
+OmicLogger - 2024-09-20 02:10:43,062 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 24
+OmicLogger - 2024-09-20 02:10:43,782 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 25
+OmicLogger - 2024-09-20 02:10:44,513 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 26
+OmicLogger - 2024-09-20 02:10:45,236 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 27
+OmicLogger - 2024-09-20 02:10:45,945 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 28
+OmicLogger - 2024-09-20 02:10:46,680 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 29
+OmicLogger - 2024-09-20 02:10:47,415 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 30
+OmicLogger - 2024-09-20 02:10:48,200 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 31
+OmicLogger - 2024-09-20 02:10:48,956 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 32
+OmicLogger - 2024-09-20 02:10:49,684 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 33
+OmicLogger - 2024-09-20 02:10:50,429 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 34
+OmicLogger - 2024-09-20 02:10:51,128 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 35
+OmicLogger - 2024-09-20 02:10:51,849 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 36
+OmicLogger - 2024-09-20 02:10:52,637 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 37
+OmicLogger - 2024-09-20 02:10:53,372 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 38
+OmicLogger - 2024-09-20 02:10:54,080 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 39
+OmicLogger - 2024-09-20 02:10:54,808 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 40
+OmicLogger - 2024-09-20 02:10:55,543 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 41
+OmicLogger - 2024-09-20 02:10:56,359 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 42
+OmicLogger - 2024-09-20 02:10:57,056 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 43
+OmicLogger - 2024-09-20 02:10:57,796 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 44
+OmicLogger - 2024-09-20 02:10:58,543 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 45
+OmicLogger - 2024-09-20 02:10:59,229 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 46
+OmicLogger - 2024-09-20 02:10:59,921 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 47
+OmicLogger - 2024-09-20 02:11:00,621 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 48
+OmicLogger - 2024-09-20 02:11:01,320 - plots_both.py - boxplot_scorer_cv() - DEBUG : KNeighborsClassifier, fold 49
+OmicLogger - 2024-09-20 02:11:02,065 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 0
+OmicLogger - 2024-09-20 02:11:02,245 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 02:11:02,443 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 02:23:16,224 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 02:23:16,226 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 02:23:16,230 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 1
+OmicLogger - 2024-09-20 02:23:16,293 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 02:23:16,493 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 02:35:30,338 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 02:35:30,341 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 02:35:30,347 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 2
+OmicLogger - 2024-09-20 02:35:30,413 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 02:35:30,618 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 02:47:40,840 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 02:47:40,842 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 02:47:40,846 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 3
+OmicLogger - 2024-09-20 02:47:40,912 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 02:47:41,115 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 02:59:52,821 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 02:59:52,823 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 02:59:52,828 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 4
+OmicLogger - 2024-09-20 02:59:52,894 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 02:59:53,094 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 03:12:04,684 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 03:12:04,685 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 03:12:04,690 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 5
+OmicLogger - 2024-09-20 03:12:04,753 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 03:12:04,926 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 03:24:13,430 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 03:24:13,432 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 03:24:13,436 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 6
+OmicLogger - 2024-09-20 03:24:13,501 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 03:24:13,701 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 03:36:25,674 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 03:36:25,687 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 03:36:25,692 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 7
+OmicLogger - 2024-09-20 03:36:25,757 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 03:36:25,957 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 03:48:34,970 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 03:48:34,972 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 03:48:34,977 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 8
+OmicLogger - 2024-09-20 03:48:35,042 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 03:48:35,241 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 04:00:44,552 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 04:00:44,554 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 04:00:44,558 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 9
+OmicLogger - 2024-09-20 04:00:44,620 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 04:00:44,789 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 04:12:52,284 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 04:12:52,286 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 04:12:52,291 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 10
+OmicLogger - 2024-09-20 04:12:52,366 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 04:12:52,567 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 04:25:02,462 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 04:25:02,467 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 04:25:02,473 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 11
+OmicLogger - 2024-09-20 04:25:02,541 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 04:25:02,744 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 04:37:09,351 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 04:37:09,353 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 04:37:09,358 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 12
+OmicLogger - 2024-09-20 04:37:09,422 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 04:37:09,621 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 04:49:23,281 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 04:49:23,283 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 04:49:23,288 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 13
+OmicLogger - 2024-09-20 04:49:23,354 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 04:49:23,556 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 05:01:43,263 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 05:01:43,265 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 05:01:43,277 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 14
+OmicLogger - 2024-09-20 05:01:43,345 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 05:01:43,565 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 05:14:07,949 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 05:14:07,951 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 05:14:07,956 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 15
+OmicLogger - 2024-09-20 05:14:08,024 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 05:14:08,230 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 05:26:30,344 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 05:26:30,347 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 05:26:30,353 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 16
+OmicLogger - 2024-09-20 05:26:30,419 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 05:26:30,623 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 05:38:39,152 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 05:38:39,154 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 05:38:39,159 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 17
+OmicLogger - 2024-09-20 05:38:39,221 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 05:38:39,392 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 05:50:46,645 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 05:50:46,647 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 05:50:46,652 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 18
+OmicLogger - 2024-09-20 05:50:46,716 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 05:50:46,895 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 06:02:53,037 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 06:02:53,041 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 06:02:53,045 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 19
+OmicLogger - 2024-09-20 06:02:53,107 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 06:02:53,278 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 06:14:55,109 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 06:14:55,110 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 06:14:55,115 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 20
+OmicLogger - 2024-09-20 06:14:55,174 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 06:14:55,347 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 06:26:52,991 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 06:26:52,993 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 06:26:52,998 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 21
+OmicLogger - 2024-09-20 06:26:53,060 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 06:26:53,233 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 06:39:02,607 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 06:39:02,609 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 06:39:02,613 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 22
+OmicLogger - 2024-09-20 06:39:02,679 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 06:39:02,871 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 06:51:13,941 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 06:51:13,942 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 06:51:13,947 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 23
+OmicLogger - 2024-09-20 06:51:14,015 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 06:51:14,193 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 07:03:25,067 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 07:03:25,069 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 07:03:25,073 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 24
+OmicLogger - 2024-09-20 07:03:25,142 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 07:03:25,314 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 07:15:36,715 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 07:15:36,717 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 07:15:36,722 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 25
+OmicLogger - 2024-09-20 07:15:36,790 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 07:15:36,974 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 07:27:47,686 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 07:27:47,689 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 07:27:47,693 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 26
+OmicLogger - 2024-09-20 07:27:47,761 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 07:27:47,934 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 07:39:58,607 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 07:39:58,609 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 07:39:58,615 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 27
+OmicLogger - 2024-09-20 07:39:58,681 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 07:39:58,860 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 07:52:09,619 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 07:52:09,621 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 07:52:09,625 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 28
+OmicLogger - 2024-09-20 07:52:09,692 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 07:52:09,864 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 08:04:21,178 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 08:04:21,180 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 08:04:21,185 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 29
+OmicLogger - 2024-09-20 08:04:21,256 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 08:04:21,440 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 08:16:33,637 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 08:16:33,639 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 08:16:33,644 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 30
+OmicLogger - 2024-09-20 08:16:33,710 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 08:16:33,886 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 08:28:44,850 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 08:28:44,852 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 08:28:44,856 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 31
+OmicLogger - 2024-09-20 08:28:44,923 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 08:28:45,094 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 08:40:56,542 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 08:40:56,544 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 08:40:56,548 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 32
+OmicLogger - 2024-09-20 08:40:56,614 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 08:40:56,789 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 08:53:10,873 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 08:53:10,875 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 08:53:10,879 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 33
+OmicLogger - 2024-09-20 08:53:10,944 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 08:53:11,116 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 09:05:22,198 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 09:05:22,200 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 09:05:22,205 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 34
+OmicLogger - 2024-09-20 09:05:22,353 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 09:05:22,569 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 09:17:31,653 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 09:17:31,655 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 09:17:31,660 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 35
+OmicLogger - 2024-09-20 09:17:31,726 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 09:17:31,901 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 09:29:42,564 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 09:29:42,566 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 09:29:42,571 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 36
+OmicLogger - 2024-09-20 09:29:42,637 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 09:29:42,810 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 09:41:54,145 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 09:41:54,147 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 09:41:54,151 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 37
+OmicLogger - 2024-09-20 09:41:54,215 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 09:41:54,387 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 09:54:05,397 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 09:54:05,399 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 09:54:05,404 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 38
+OmicLogger - 2024-09-20 09:54:05,471 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 09:54:05,648 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 10:06:16,749 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 10:06:16,751 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 10:06:16,755 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 39
+OmicLogger - 2024-09-20 10:06:16,823 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 10:06:17,021 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 10:18:29,658 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 10:18:29,659 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 10:18:29,664 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 40
+OmicLogger - 2024-09-20 10:18:29,734 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 10:18:29,932 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 10:30:40,237 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 10:30:40,239 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 10:30:40,243 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 41
+OmicLogger - 2024-09-20 10:30:40,313 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 10:30:40,513 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 10:42:52,509 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 10:42:52,512 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 10:42:52,516 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 42
+OmicLogger - 2024-09-20 10:42:52,585 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 10:42:52,763 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 10:55:08,652 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 10:55:08,655 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 10:55:08,660 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 43
+OmicLogger - 2024-09-20 10:55:08,726 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 10:55:08,921 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 11:07:19,893 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 11:07:19,896 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 11:07:19,900 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 44
+OmicLogger - 2024-09-20 11:07:19,968 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 11:07:20,192 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 11:19:30,973 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 11:19:30,974 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 11:19:30,979 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 45
+OmicLogger - 2024-09-20 11:19:31,046 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 11:19:31,243 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 11:31:42,753 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 11:31:42,754 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 11:31:42,758 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 46
+OmicLogger - 2024-09-20 11:31:42,823 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 11:31:43,018 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 11:43:53,511 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 11:43:53,516 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 11:43:53,522 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 47
+OmicLogger - 2024-09-20 11:43:53,593 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 11:43:53,798 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 11:56:06,238 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 11:56:06,240 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 11:56:06,245 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 48
+OmicLogger - 2024-09-20 11:56:06,310 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 11:56:06,518 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 12:08:16,999 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:08:17,001 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:08:17,006 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoXGBoost, fold 49
+OmicLogger - 2024-09-20 12:08:17,072 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoXGBoost_best.h5
+OmicLogger - 2024-09-20 12:08:17,271 - custom_model.py - _define_model() - DEBUG : autoxgboost_config = {'verbose': True, 'n_trials': 10, 'timeout': 500}
+OmicLogger - 2024-09-20 12:20:28,477 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:20:28,479 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:20:28,819 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 0
+OmicLogger - 2024-09-20 12:20:28,960 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:20:29,103 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:22:37,690 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:22:37,691 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:22:37,695 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 1
+OmicLogger - 2024-09-20 12:22:37,856 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:22:37,968 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:24:57,915 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:24:57,916 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:24:57,919 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 2
+OmicLogger - 2024-09-20 12:24:57,985 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:24:58,094 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:27:05,234 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:27:05,235 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:27:05,238 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 3
+OmicLogger - 2024-09-20 12:27:05,304 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:27:05,413 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:29:19,070 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:29:19,071 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:29:19,074 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 4
+OmicLogger - 2024-09-20 12:29:19,141 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:29:19,243 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:31:37,287 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:31:37,288 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:31:37,292 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 5
+OmicLogger - 2024-09-20 12:31:37,359 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:31:37,462 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:33:51,570 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:33:51,571 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:33:51,574 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 6
+OmicLogger - 2024-09-20 12:33:51,638 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:33:51,741 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:36:02,918 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:36:02,919 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:36:02,922 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 7
+OmicLogger - 2024-09-20 12:36:02,988 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:36:03,092 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:38:14,540 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:38:14,541 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:38:14,544 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 8
+OmicLogger - 2024-09-20 12:38:14,611 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:38:14,723 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:40:27,778 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:40:27,779 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:40:27,782 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 9
+OmicLogger - 2024-09-20 12:40:27,849 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:40:27,953 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:42:40,424 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:42:40,426 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:42:40,429 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 10
+OmicLogger - 2024-09-20 12:42:40,498 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:42:40,609 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:44:53,409 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:44:53,410 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:44:53,413 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 11
+OmicLogger - 2024-09-20 12:44:53,481 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:44:53,592 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:47:02,143 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:47:02,144 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:47:02,147 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 12
+OmicLogger - 2024-09-20 12:47:02,212 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:47:02,320 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:49:10,089 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:49:10,090 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:49:10,093 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 13
+OmicLogger - 2024-09-20 12:49:10,158 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:49:10,259 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:51:24,617 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:51:24,618 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:51:24,621 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 14
+OmicLogger - 2024-09-20 12:51:24,693 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:51:24,804 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:53:39,204 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:53:39,205 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:53:39,208 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 15
+OmicLogger - 2024-09-20 12:53:39,273 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:53:39,374 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:55:46,072 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:55:46,074 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:55:46,077 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 16
+OmicLogger - 2024-09-20 12:55:46,142 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:55:46,248 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 12:58:08,153 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 12:58:08,154 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 12:58:08,158 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 17
+OmicLogger - 2024-09-20 12:58:08,224 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 12:58:08,329 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:00:22,529 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:00:22,531 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:00:22,534 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 18
+OmicLogger - 2024-09-20 13:00:22,599 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:00:22,709 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:02:35,018 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:02:35,019 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:02:35,022 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 19
+OmicLogger - 2024-09-20 13:02:35,204 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:02:35,308 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:04:47,449 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:04:47,450 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:04:47,453 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 20
+OmicLogger - 2024-09-20 13:04:47,519 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:04:47,630 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:07:02,534 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:07:03,564 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:07:03,568 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 21
+OmicLogger - 2024-09-20 13:07:03,627 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:07:03,723 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:09:18,066 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:09:18,067 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:09:18,071 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 22
+OmicLogger - 2024-09-20 13:09:18,144 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:09:18,249 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:11:33,105 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:11:33,106 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:11:33,110 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 23
+OmicLogger - 2024-09-20 13:11:33,176 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:11:33,279 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:13:48,279 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:13:48,280 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:13:48,284 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 24
+OmicLogger - 2024-09-20 13:13:48,351 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:13:48,453 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:15:57,143 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:15:57,144 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:15:57,147 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 25
+OmicLogger - 2024-09-20 13:15:57,283 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:15:57,396 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:18:17,295 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:18:17,296 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:18:17,300 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 26
+OmicLogger - 2024-09-20 13:18:17,371 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:18:17,477 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:20:30,452 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:20:30,453 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:20:30,456 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 27
+OmicLogger - 2024-09-20 13:20:30,527 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:20:30,642 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:22:38,283 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:22:38,284 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:22:38,287 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 28
+OmicLogger - 2024-09-20 13:22:38,354 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:22:38,462 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:24:51,242 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:24:51,244 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:24:51,247 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 29
+OmicLogger - 2024-09-20 13:24:51,311 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:24:51,418 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:27:02,976 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:27:02,977 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:27:02,981 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 30
+OmicLogger - 2024-09-20 13:27:03,059 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:27:03,161 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:29:16,199 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:29:16,200 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:29:16,203 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 31
+OmicLogger - 2024-09-20 13:29:16,270 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:29:16,383 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:31:36,013 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:31:36,013 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:31:36,016 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 32
+OmicLogger - 2024-09-20 13:31:36,100 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:31:36,206 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:33:43,477 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:33:43,478 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:33:43,482 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 33
+OmicLogger - 2024-09-20 13:33:43,572 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:33:43,677 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:35:57,449 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:35:57,451 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:35:57,454 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 34
+OmicLogger - 2024-09-20 13:35:57,523 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:35:57,624 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:38:10,778 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:38:10,779 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:38:10,783 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 35
+OmicLogger - 2024-09-20 13:38:10,847 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:38:10,950 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:40:21,387 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:40:21,389 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:40:21,392 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 36
+OmicLogger - 2024-09-20 13:40:21,462 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:40:21,574 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:42:36,138 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:42:36,139 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:42:36,143 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 37
+OmicLogger - 2024-09-20 13:42:36,232 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:42:36,341 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:44:49,980 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:44:49,982 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:44:49,985 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 38
+OmicLogger - 2024-09-20 13:44:50,057 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:44:50,160 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:47:03,848 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:47:03,849 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:47:03,853 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 39
+OmicLogger - 2024-09-20 13:47:03,919 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:47:04,028 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:49:19,705 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:49:19,706 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:49:19,710 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 40
+OmicLogger - 2024-09-20 13:49:19,802 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:49:19,904 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:51:29,077 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:51:29,078 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:51:29,082 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 41
+OmicLogger - 2024-09-20 13:51:29,149 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:51:29,255 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:53:47,980 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:53:47,981 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:53:47,985 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 42
+OmicLogger - 2024-09-20 13:53:48,052 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:53:48,173 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:56:06,510 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:56:06,511 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:56:06,514 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 43
+OmicLogger - 2024-09-20 13:56:06,629 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:56:06,741 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 13:58:22,387 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 13:58:22,389 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 13:58:22,392 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 44
+OmicLogger - 2024-09-20 13:58:22,467 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 13:58:22,570 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 14:00:36,001 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:00:36,002 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:00:36,006 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 45
+OmicLogger - 2024-09-20 14:00:36,076 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 14:00:36,184 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 14:02:55,463 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:02:55,464 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:02:55,467 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 46
+OmicLogger - 2024-09-20 14:02:55,552 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 14:02:55,656 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 14:05:10,441 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:05:10,442 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:05:10,446 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 47
+OmicLogger - 2024-09-20 14:05:10,516 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 14:05:10,625 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 14:07:23,465 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:07:23,467 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:07:23,470 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 48
+OmicLogger - 2024-09-20 14:07:23,557 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 14:07:23,660 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 14:09:29,065 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:09:29,066 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:09:29,070 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoLGBM, fold 49
+OmicLogger - 2024-09-20 14:09:29,184 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoLGBM_best.h5
+OmicLogger - 2024-09-20 14:09:29,294 - custom_model.py - _define_model() - DEBUG : autolgbm_config = {'verbose': True, 'n_trials': 5, 'timeout': 60}
+OmicLogger - 2024-09-20 14:11:43,128 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:11:43,129 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:11:45,100 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 0
+OmicLogger - 2024-09-20 14:11:50,044 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:11:50,456 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:20:50,445 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:20:50,446 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:20:50,449 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 1
+OmicLogger - 2024-09-20 14:20:50,548 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:20:50,719 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:25:29,668 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:25:29,669 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:25:29,672 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 2
+OmicLogger - 2024-09-20 14:25:29,745 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:25:29,859 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:27:26,503 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:27:26,504 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:27:26,507 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 3
+OmicLogger - 2024-09-20 14:27:26,600 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:27:26,712 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:29:43,510 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:29:43,511 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:29:43,515 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 4
+OmicLogger - 2024-09-20 14:29:43,594 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:29:43,710 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:31:59,975 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:31:59,976 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:31:59,979 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 5
+OmicLogger - 2024-09-20 14:32:00,055 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:32:00,165 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:33:55,287 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:33:55,288 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:33:55,292 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 6
+OmicLogger - 2024-09-20 14:33:55,370 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:33:55,486 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:35:52,823 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:35:52,824 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:35:52,828 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 7
+OmicLogger - 2024-09-20 14:35:52,900 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:35:53,008 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:37:47,993 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:37:47,994 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:37:47,997 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 8
+OmicLogger - 2024-09-20 14:37:48,078 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:37:48,193 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:39:46,642 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:39:46,644 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:39:46,647 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 9
+OmicLogger - 2024-09-20 14:39:46,723 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:39:46,835 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:41:41,917 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:41:41,918 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:41:41,921 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 10
+OmicLogger - 2024-09-20 14:41:42,001 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:41:42,302 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:43:55,917 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:43:55,918 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:43:55,922 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 11
+OmicLogger - 2024-09-20 14:43:55,991 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:43:56,178 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:45:52,706 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:45:52,707 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:45:52,711 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 12
+OmicLogger - 2024-09-20 14:45:52,793 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:45:52,922 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:47:48,023 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:47:48,024 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:47:48,027 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 13
+OmicLogger - 2024-09-20 14:47:48,103 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:47:48,220 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:49:43,473 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:49:43,474 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:49:43,478 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 14
+OmicLogger - 2024-09-20 14:49:43,549 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:49:43,655 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:51:48,035 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:51:48,036 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:51:48,039 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 15
+OmicLogger - 2024-09-20 14:51:48,112 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:51:48,228 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:53:43,314 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:53:43,315 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:53:43,318 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 16
+OmicLogger - 2024-09-20 14:53:43,399 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:53:43,532 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:55:44,528 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:55:44,529 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:55:44,533 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 17
+OmicLogger - 2024-09-20 14:55:44,609 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:55:44,726 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:57:40,104 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:57:40,105 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:57:40,108 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 18
+OmicLogger - 2024-09-20 14:57:40,183 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:57:40,298 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 14:59:41,124 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 14:59:41,125 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 14:59:41,128 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 19
+OmicLogger - 2024-09-20 14:59:41,203 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 14:59:42,470 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:01:53,057 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:01:53,058 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:01:53,061 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 20
+OmicLogger - 2024-09-20 15:01:53,142 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:01:54,515 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:03:54,557 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:03:54,559 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:03:54,562 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 21
+OmicLogger - 2024-09-20 15:03:54,629 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:03:54,859 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:06:03,366 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:06:03,367 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:06:03,370 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 22
+OmicLogger - 2024-09-20 15:06:03,451 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:06:07,741 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:08:16,377 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:08:16,378 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:08:16,381 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 23
+OmicLogger - 2024-09-20 15:08:16,467 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:08:21,164 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:10:16,667 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:10:16,668 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:10:16,672 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 24
+OmicLogger - 2024-09-20 15:10:16,749 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:10:17,457 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:12:06,662 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:12:06,663 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:12:06,666 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 25
+OmicLogger - 2024-09-20 15:12:06,732 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:12:07,459 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:14:05,511 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:14:05,512 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:14:05,516 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 26
+OmicLogger - 2024-09-20 15:14:05,586 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:14:05,690 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:16:10,982 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:16:10,983 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:16:10,986 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 27
+OmicLogger - 2024-09-20 15:16:11,062 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:16:12,060 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:18:07,496 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:18:07,497 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:18:07,501 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 28
+OmicLogger - 2024-09-20 15:18:07,577 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:18:09,874 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:20:04,429 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:20:04,430 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:20:04,434 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 29
+OmicLogger - 2024-09-20 15:20:04,512 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:20:05,199 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:21:57,447 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:21:57,448 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:21:57,452 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 30
+OmicLogger - 2024-09-20 15:21:57,529 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:21:59,090 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:24:06,561 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:24:06,563 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:24:06,566 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 31
+OmicLogger - 2024-09-20 15:24:06,640 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:24:06,755 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:26:03,161 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:26:03,163 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:26:03,166 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 32
+OmicLogger - 2024-09-20 15:26:03,241 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:26:03,358 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:28:00,084 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:28:00,086 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:28:00,092 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 33
+OmicLogger - 2024-09-20 15:28:00,171 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:28:00,288 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:30:00,889 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:30:00,890 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:30:00,893 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 34
+OmicLogger - 2024-09-20 15:30:00,960 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:30:01,075 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:31:58,610 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:31:58,611 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:31:58,614 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 35
+OmicLogger - 2024-09-20 15:31:58,694 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:31:59,004 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:35:06,900 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:35:06,902 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:35:06,906 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 36
+OmicLogger - 2024-09-20 15:35:06,980 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:35:15,180 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:37:19,971 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:37:19,972 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:37:19,976 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 37
+OmicLogger - 2024-09-20 15:37:20,062 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:37:20,501 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:39:11,260 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:39:11,262 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:39:11,266 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 38
+OmicLogger - 2024-09-20 15:39:11,345 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:39:11,462 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:41:07,617 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:41:07,619 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:41:07,622 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 39
+OmicLogger - 2024-09-20 15:41:07,705 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:41:07,959 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:43:00,475 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:43:00,476 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:43:00,480 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 40
+OmicLogger - 2024-09-20 15:43:00,557 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:43:01,967 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:44:54,325 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:44:54,326 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:44:54,329 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 41
+OmicLogger - 2024-09-20 15:44:54,402 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:44:55,597 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:47:10,253 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:47:10,254 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:47:10,258 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 42
+OmicLogger - 2024-09-20 15:47:10,336 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:47:10,550 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:49:06,166 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:49:06,167 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:49:06,170 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 43
+OmicLogger - 2024-09-20 15:49:06,250 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:49:06,366 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:51:07,852 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:51:07,853 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:51:07,857 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 44
+OmicLogger - 2024-09-20 15:51:08,052 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:51:08,287 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:53:56,063 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:53:56,064 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:53:56,067 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 45
+OmicLogger - 2024-09-20 15:53:56,257 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:53:56,497 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:56:11,241 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:56:11,242 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:56:11,246 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 46
+OmicLogger - 2024-09-20 15:56:11,329 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:56:11,525 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 15:58:07,778 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 15:58:07,779 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 15:58:07,782 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 47
+OmicLogger - 2024-09-20 15:58:07,857 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 15:58:08,008 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 16:01:08,121 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 16:01:08,122 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 16:01:08,126 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 48
+OmicLogger - 2024-09-20 16:01:08,210 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 16:01:08,339 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 16:03:26,742 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 16:03:26,743 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 16:03:26,746 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoSKLearn, fold 49
+OmicLogger - 2024-09-20 16:03:26,816 - custom_model.py - load_model() - DEBUG : loading: experiments/results/seed_classifier_balanced_JA-1/models/AutoSKLearn_best.h5
+OmicLogger - 2024-09-20 16:03:28,086 - custom_model.py - _define_model() - DEBUG : autosklearn_config = {'verbose': True, 'estimators': ['decision_tree', 'extra_trees', 'k_nearest_neighbors', 'random_forest'], 'time_left_for_this_task': 120, 'per_run_time_limit': 60, 'memory_limit': 65536, 'n_jobs': 1, 'ensemble_size': 1}
+OmicLogger - 2024-09-20 16:06:11,632 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 16:06:11,633 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 16:06:11,815 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoKeras, fold 0
+OmicLogger - 2024-09-20 16:06:12,037 - custom_model.py - load_model() - DEBUG : loading: {model_path}.h5
+OmicLogger - 2024-09-20 16:06:12,364 - custom_model.py - _define_model() - DEBUG : autokeras_config = {'n_epochs': 100, 'batch_size': 32, 'verbose': True, 'n_blocks': 3, 'dropout': 0.3, 'use_batchnorm': True, 'n_trials': 4, 'tuner': 'bayesian'}
+OmicLogger - 2024-09-20 17:14:06,963 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 17:14:06,995 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 17:14:07,216 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoKeras, fold 1
+OmicLogger - 2024-09-20 17:14:07,336 - custom_model.py - load_model() - DEBUG : loading: {model_path}.h5
+OmicLogger - 2024-09-20 17:14:07,748 - custom_model.py - _define_model() - DEBUG : autokeras_config = {'n_epochs': 100, 'batch_size': 32, 'verbose': True, 'n_blocks': 3, 'dropout': 0.3, 'use_batchnorm': True, 'n_trials': 4, 'tuner': 'bayesian'}
+OmicLogger - 2024-09-20 18:16:54,615 - custom_model.py - fit() - DEBUG : Model Summary:
+OmicLogger - 2024-09-20 18:16:54,621 - custom_model.py - fit() - DEBUG : None
+OmicLogger - 2024-09-20 18:16:54,837 - plots_both.py - boxplot_scorer_cv() - DEBUG : AutoKeras, fold 2
+OmicLogger - 2024-09-20 18:16:54,923 - custom_model.py - load_model() - DEBUG : loading: {model_path}.h5
+OmicLogger - 2024-09-20 18:16:55,220 - custom_model.py - _define_model() - DEBUG : autokeras_config = {'n_epochs': 100, 'batch_size': 32, 'verbose': True, 'n_blocks': 3, 'dropout': 0.3, 'use_batchnorm': True, 'n_trials': 4, 'tuner': 'bayesian'}
+OmicLogger - 2024-09-20 19:09:06,753 - mode_train_models.py - main() - ERROR : [Errno 28] No space left on device
+Traceback (most recent call last):
+  File "/opt/software/AutoXAI4Omics/src/mode_train_models.py", line 195, in main
+    mode_plotting.plot_graphs(
+  File "/opt/software/AutoXAI4Omics/src/mode_plotting.py", line 71, in plot_graphs
+    plot_func(
+  File "/opt/software/AutoXAI4Omics/src/plotting/plots_both.py", line 343, in boxplot_scorer_cv
+    model.fit(data[train_idx], true_labels[train_idx])
+  File "/opt/software/AutoXAI4Omics/src/models/custom_model.py", line 102, in fit
+    self.model.fit_data(x_train, y_train, x_val, y_val)
+  File "/opt/software/AutoXAI4Omics/src/models/tabauto/keras_model.py", line 380, in fit_data
+    return self.fit_data_ak(trainX, trainY, testX, testY, input_list)
+  File "/opt/software/AutoXAI4Omics/src/models/tabauto/keras_model.py", line 298, in fit_data_ak
+    self.model.fit(
+  File "/usr/local/lib/python3.9/site-packages/autokeras/auto_model.py", line 292, in fit
+    history = self.tuner.search(
+  File "/usr/local/lib/python3.9/site-packages/autokeras/engine/tuner.py", line 219, in search
+    pipeline, model, history = self.final_fit(**copied_fit_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/autokeras/engine/tuner.py", line 269, in final_fit
+    model, history = utils.fit_with_adaptive_batch_size(
+  File "/usr/local/lib/python3.9/site-packages/autokeras/utils/utils.py", line 88, in fit_with_adaptive_batch_size
+    history = run_with_adaptive_batch_size(
+  File "/usr/local/lib/python3.9/site-packages/autokeras/utils/utils.py", line 101, in run_with_adaptive_batch_size
+    history = func(x=x, validation_data=validation_data, **fit_kwargs)
+  File "/usr/local/lib/python3.9/site-packages/autokeras/utils/utils.py", line 89, in <lambda>
+    batch_size, lambda **kwargs: model.fit(**kwargs), **fit_kwargs
+  File "/usr/local/lib/python3.9/site-packages/keras/utils/traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/usr/local/lib/python3.9/site-packages/keras/utils/io_utils.py", line 80, in print_msg
+    sys.stdout.flush()
+OSError: [Errno 28] No space left on device
